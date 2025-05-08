@@ -30,11 +30,15 @@ With this now you've just setup the basic project. It's not even connected yet. 
 ### Step3: Connect MongoDB with Spring-Boot (backend)
 You can follow the official docs mentioned [here](https://www.mongodb.com/resources/products/compatibilities/spring-boot)
 
-1. Go to mongoDB site (here)[https://cloud.mongodb.com/] & create a new cluster.
+1. Go to mongoDB site [here](https://cloud.mongodb.com/) & create a new cluster.
 2. Copy the connection string uri and paste it in the `application.properties` file in the `src/main/resources` folder of `backend` dir as given below:
     ```java
     spring.data.mongodb.uri=mongodb+srv://<username>:<pwd>@<cluster>.mongodb.net/mygrocerylist
     spring.data.mongodb.database=mygrocerylist  // it creates the database if not exists
     ```
 
-
+### Step4: Implement Backend Logics
+- Model: To create a model class
+- Repository: To create a repository interface for data access
+- Service: To implement all logics
+- Controller: To handle HTTP requests
